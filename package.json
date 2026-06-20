@@ -1,0 +1,40 @@
+{
+  "name": "garden",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.27.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean",
+    "check": "pnpm lint && pnpm typecheck && pnpm build",
+    "format": "biome check --write .",
+    "biome": "biome check .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "biome check --write"
+    ]
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "6.4.3",
+      "@vitejs/plugin-react": "5.2.0"
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.0",
+    "@types/node": "^26.0.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "5.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
+    "turbo": "^2.9.18",
+    "typescript": "^6.0.3",
+    "vite": "6.4.3"
+  }
+}

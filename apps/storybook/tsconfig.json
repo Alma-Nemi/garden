@@ -1,0 +1,14 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"types": ["node", "react", "react-dom"],
+		"moduleResolution": "Bundler",
+		"noEmit": true
+	},
+	"include": [
+		".storybook",
+		"./src",
+		"../../packages/ui/src",
+		"../../packages/theme/src"
+	]
+}
