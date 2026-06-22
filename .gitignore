@@ -15,4 +15,8 @@ storybook-static
 
 # Build
 dist
+<<<<<<< HEAD
 coverage
+=======
+coverage
+>>>>>>> b7ff05b (chore: cleanup gitignored files)
