@@ -1,6 +1,6 @@
 {
 	"files": {
-		"includes": ["src", "apps", "packages"],
+		"includes": ["**/*"],
 		"experimentalScannerIgnores": [
 			"**/dist/**",
 			"**/storybook-static/**",
