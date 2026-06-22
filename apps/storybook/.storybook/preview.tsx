@@ -1,7 +1,5 @@
-import type { Preview, Decorator } from "@storybook/react";
-import React from "react";
-
-import { ThemeProvider, defaultTheme } from "@garden/theme";
+import { defaultTheme, ThemeProvider } from "@garden/theme";
+import type { Decorator, Preview } from "@storybook/react";
 
 const withTheme: Decorator = (Story) => (
 	<ThemeProvider theme={defaultTheme}>

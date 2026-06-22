@@ -1,5 +1,5 @@
 export const config = {
-	appName: "Garden"
+	appName: "Garden",
 } as const;
 
 export type AppConfig = typeof config;

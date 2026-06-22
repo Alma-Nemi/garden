@@ -1,28 +1,25 @@
 export type Theme = {
-	colors: {
-		primary: string;
-		text: string;
-		background: string;
-	};
-
+	colors: Record<"primary" | "text" | "background", string>;
 	spacing: Record<"sm" | "md" | "lg", string>;
 	radius: Record<"sm" | "md" | "lg", string>;
 };
 
 export const defaultTheme = {
 	colors: {
-		primary: "#6C5CE7",
-		text: "#E6E6E6",
-		background: "#0F0F12"
+		primary: "#4f46e5",
+		text: "#111827",
+		background: "#ffffff",
 	},
+
 	spacing: {
-		sm: "4px",
-		md: "8px",
-		lg: "16px"
+		sm: "8px",
+		md: "16px",
+		lg: "24px",
 	},
+
 	radius: {
 		sm: "4px",
 		md: "8px",
-		lg: "12px"
-	}
-} as const;
+		lg: "12px",
+	},
+} as const satisfies Theme;

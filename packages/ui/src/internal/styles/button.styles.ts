@@ -1,6 +1,5 @@
-import type { ButtonVariant } from "../../components/Button/Button.types";
-
-export function createButtonStyles(theme: any) {
+import type { Theme } from "@garden/theme";
+export function createButtonStyles(theme: Theme) {
 	return {
 		base: {
 			padding: `${theme.spacing.sm} ${theme.spacing.md}`,
@@ -8,49 +7,49 @@ export function createButtonStyles(theme: any) {
 			border: "none",
 			cursor: "pointer",
 			fontWeight: 500,
-			transition: "all 0.2s ease"
+			transition: "all 0.2s ease",
 		},
 
 		variants: {
 			variant: {
 				primary: {
-					background: theme.primary,
-					color: "#fff"
+					background: theme.colors.primary,
+					color: "#fff",
 				},
 
 				secondary: {
 					background: "transparent",
-					color: theme.primary,
-					border: `1px solid ${theme.primary}`
+					color: theme.colors.primary,
+					border: `1px solid ${theme.colors.primary}`,
 				},
 
 				ghost: {
 					background: "transparent",
-					color: theme.text
-				}
+					color: theme.colors.text,
+				},
 			},
 
 			size: {
 				sm: {
 					fontSize: "12px",
-					padding: "6px 10px"
+					padding: "6px 10px",
 				},
 				md: {
 					fontSize: "14px",
-					padding: "8px 16px"
+					padding: "8px 16px",
 				},
 				lg: {
 					fontSize: "16px",
-					padding: "12px 20px"
-				}
+					padding: "12px 20px",
+				},
 			},
 
 			disabled: {
 				true: {
 					opacity: 0.5,
-					cursor: "not-allowed"
-				}
-			}
-		}
+					cursor: "not-allowed",
+				},
+			},
+		},
 	};
 }

@@ -3,18 +3,19 @@ import type { ButtonProps } from "./Button.types";
 import { buttonStyles } from "./button.cva";
 
 export function Button({
-												 label,
-												 variant = "primary",
-												 size = "md",
-												 disabled,
-												 onClick,
-											 }: ButtonProps) {
+	label,
+	variant = "primary",
+	size = "md",
+	disabled,
+	onClick,
+}: ButtonProps) {
 	const theme = useTheme();
 
 	const styles = buttonStyles(theme);
 
 	return (
 		<button
+			type="button"
 			onClick={onClick}
 			disabled={disabled}
 			style={{

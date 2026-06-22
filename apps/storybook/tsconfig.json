@@ -1,12 +1,12 @@
 {
 	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
-		"types": [
-			"node",
-			"react",
-			"react-dom"
-		],
+		"jsx": "react-jsx",
+		"types": ["node", "react", "react-dom"],
 		"noEmit": true
 	},
-	"include": [".storybook"]
+	"include": [
+		".storybook",
+		"src"
+	]
 }

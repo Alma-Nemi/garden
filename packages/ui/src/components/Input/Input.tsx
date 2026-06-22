@@ -1,6 +1,13 @@
 import { useTheme } from "@garden/theme";
+import type { ChangeEvent } from "react";
 
-export function Input({ value, onChange, placeholder }: any) {
+type InputProps = {
+	value: string;
+	placeholder?: string;
+	onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+};
+
+export function Input({ value, onChange, placeholder }: InputProps) {
 	const theme = useTheme();
 
 	return (
@@ -13,7 +20,7 @@ export function Input({ value, onChange, placeholder }: any) {
 				borderRadius: theme.radius.md,
 				border: `1px solid ${theme.colors.primary}`,
 				background: theme.colors.background,
-				color: theme.colors.text
+				color: theme.colors.text,
 			}}
 		/>
 	);

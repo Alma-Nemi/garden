@@ -7,9 +7,9 @@ module.exports = {
 					"@garden/ui/src/*",
 					"@garden/ui/internal/*",
 					"@garden/theme/src/*",
-					"@garden/core/src/*"
-				]
-			}
-		]
-	}
+					"@garden/core/src/*",
+				],
+			},
+		],
+	},
 };
