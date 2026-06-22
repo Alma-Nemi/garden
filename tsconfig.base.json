@@ -16,7 +16,8 @@
 		"paths": {
 			"@garden/core": ["packages/core/src/index.ts"],
 			"@garden/theme": ["packages/theme/src/index.ts"],
-			"@garden/ui": ["packages/ui/src/index.ts"]
+			"@garden/ui": ["packages/ui/src/index.ts"],
+			"@garden/*": ["packages/*/src"]
 		}
 	}
 }

@@ -15,7 +15,10 @@
 	},
 	"devDependencies": {
 		"@storybook/addon-essentials": "8.6.18",
+		"@storybook/core": "^8.6.18",
+		"@storybook/csf": "^0.1.13",
 		"@storybook/react": "8.6.18",
+		"@storybook/react-dom-shim": "8.6.18",
 		"@storybook/react-vite": "8.6.18",
 		"@types/node": "^26.0.0",
 		"@types/react": "^19.2.17",

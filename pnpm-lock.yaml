@@ -11,6 +11,13 @@ overrides:
 importers:
 
   .:
+    dependencies:
+      react:
+        specifier: ^19.2.7
+        version: 19.2.7
+      react-dom:
+        specifier: ^19.2.7
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.0
@@ -61,9 +68,18 @@ importers:
       '@storybook/addon-essentials':
         specifier: 8.6.18
         version: 8.6.18(@types/react@19.2.17)(storybook@8.6.18)
+      '@storybook/core':
+        specifier: ^8.6.18
+        version: 8.6.18(storybook@8.6.18)
+      '@storybook/csf':
+        specifier: ^0.1.13
+        version: 0.1.13
       '@storybook/react':
         specifier: 8.6.18
         version: 8.6.18(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(storybook@8.6.18)(typescript@6.0.3)
+      '@storybook/react-dom-shim':
+        specifier: 8.6.18
+        version: 8.6.18(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(storybook@8.6.18)
       '@storybook/react-vite':
         specifier: 8.6.18
         version: 8.6.18(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(rollup@4.62.2)(storybook@8.6.18)(typescript@6.0.3)(vite@6.4.3(@types/node@26.0.0)(yaml@2.9.0))
@@ -104,7 +120,14 @@ importers:
 
   packages/core: {}
 
-  packages/theme: {}
+  packages/theme:
+    dependencies:
+      react:
+        specifier: ^19.0.0 || ^18.0.0
+        version: 19.2.7
+      react-dom:
+        specifier: ^19.0.0 || ^18.0.0
+        version: 19.2.7(react@19.2.7)
 
   packages/ui:
     dependencies:
@@ -117,6 +140,10 @@ importers:
       react-dom:
         specifier: ^19.2.7
         version: 19.2.7(react@19.2.7)
+    devDependencies:
+      '@storybook/react':
+        specifier: 8.6.18
+        version: 8.6.18(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(storybook@8.6.18)(typescript@6.0.3)
 
 packages:
 
@@ -677,6 +704,9 @@ packages:
     resolution: {integrity: sha512-x1ioz/L0CwaelCkHci3P31YtvwayN3FBftvwQOPbvRh9qeb4Cpz5IdVDmyvSxxYwXN66uAORNoqgjTi7B4/y5Q==}
     peerDependencies:
       storybook: ^8.6.18
+
+  '@storybook/csf@0.1.13':
+    resolution: {integrity: sha512-7xOOwCLGB3ebM87eemep89MYRFTko+D8qE7EdAAq74lgdqRR5cOUtYWJLjO2dLtP94nqoOdHJo6MdLLKzg412Q==}
 
   '@storybook/global@5.0.0':
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
@@ -1432,6 +1462,10 @@ packages:
     resolution: {integrity: sha512-bwabv6PupzeavybzEoArBAkwq5fnzwf8OFnRtpHwnviFWuwJPFxtyH+aVp36TmIqK3aYYgtTJ3J0m2ysxxSzQg==}
     hasBin: true
 
+  type-fest@2.19.0:
+    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
+    engines: {node: '>=12.20'}
+
   typescript@6.0.3:
     resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
@@ -2032,6 +2066,10 @@ snapshots:
     dependencies:
       storybook: 8.6.18
       unplugin: 1.16.1
+
+  '@storybook/csf@0.1.13':
+    dependencies:
+      type-fest: 2.19.0
 
   '@storybook/global@5.0.0': {}
 
@@ -2793,6 +2831,8 @@ snapshots:
       '@turbo/linux-arm64': 2.9.18
       '@turbo/windows-64': 2.9.18
       '@turbo/windows-arm64': 2.9.18
+
+  type-fest@2.19.0: {}
 
   typescript@6.0.3: {}
 

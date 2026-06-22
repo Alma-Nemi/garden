@@ -11,12 +11,26 @@
 
 		"build": {
 			"dependsOn": ["^build"],
-			"outputs": ["dist/**"]
+			"outputs": ["dist/**", "build/**", ".next/**", "storybook-static/**"]
+		},
+
+		"storybook": {
+			"dependsOn": ["^build"],
+			"outputs": ["storybook-static/**"]
 		},
 
 		"dev": {
 			"cache": false,
 			"persistent": true
+		},
+
+		"clean": {
+			"cache": false
+		},
+
+		"test": {
+			"dependsOn": ["^build"],
+			"outputs": []
 		}
 	}
 }

@@ -1,10 +1,11 @@
 {
 	"files": {
-		"includes": ["apps/**/src/**", "packages/**/src/**"],
-		"experimentalScannerIgnores": [
-			"**/dist/**",
-			"**/build/**",
-			"**/storybook-static/**"
+		"includes": [
+			"apps/**/src/**",
+			"packages/**/src/**",
+			"!!**/dist/**",
+			"!!**/build/**",
+			"!!**/storybook-static/**"
 		]
 	},
 	"formatter": {

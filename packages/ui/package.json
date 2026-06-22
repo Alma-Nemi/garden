@@ -14,5 +14,8 @@
 	},
 	"exports": {
 		".": "./src/index.ts"
+	},
+	"devDependencies": {
+		"@storybook/react": "8.6.18"
 	}
 }
