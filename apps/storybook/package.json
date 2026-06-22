@@ -25,9 +25,5 @@
     "extends": [
       "../../packages/config/eslint"
     ]
-  },
-  "include": [
-    ".storybook",
-    "src"
-  ]
+  }
 }
