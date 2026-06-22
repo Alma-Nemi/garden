@@ -1,19 +1,18 @@
+# IDE
+.idea/
+
+# Typescript
+*.tsbuildinfo
+
+# Node
 node_modules
-dist
-build
-.vite
+
+# Turbo
 .turbo
-coverage
 
-# logs
-*.log
-
-# env
-.env
-.env.*
-
-# OS
-.DS_Store
-
-# storybook build
+# Storybook
 storybook-static
+
+# Build
+dist
+coverage
