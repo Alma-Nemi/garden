@@ -5,8 +5,5 @@
 		"types": ["node", "react", "react-dom"],
 		"noEmit": true
 	},
-	"include": [
-		".storybook",
-		"src"
-	]
+	"include": [".storybook", "src"]
 }

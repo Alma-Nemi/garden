@@ -4,8 +4,8 @@
 		"module": "ESNext",
 		"moduleResolution": "Bundler",
 		"jsx": "react-jsx",
-		"types": ["node", "react", "react-dom"],
-		"rootDir": ".",
+
+		"types": ["node"],
 
 		"strict": true,
 		"skipLibCheck": true,
@@ -19,5 +19,6 @@
 			"@garden/ui": ["packages/ui/src/index.ts"],
 			"@garden/*": ["packages/*/src"]
 		}
-	}
+	},
+	"include": []
 }

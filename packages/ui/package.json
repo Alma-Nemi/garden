@@ -3,12 +3,8 @@
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
-	"dependencies": {
-		"@garden/theme": "workspace:*",
-		"react": "^19.2.7",
-		"react-dom": "^19.2.7"
-	},
 	"peerDependencies": {
+		"@garden/theme": "workspace:*",
 		"react": "^19.2.7",
 		"react-dom": "^19.2.7"
 	},

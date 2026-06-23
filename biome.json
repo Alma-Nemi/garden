@@ -1,17 +1,42 @@
 {
 	"files": {
 		"includes": [
-			"apps/**/src/**",
-			"packages/**/src/**",
+			"apps/**/*",
+			"packages/**/*",
+			"*.json",
+			".github/**/*",
+			"turbo.json",
+			"biome.json",
+			"!!**/node_modules/**",
 			"!!**/dist/**",
-			"!!**/build/**",
-			"!!**/storybook-static/**"
+			"!!**/build/**"
 		]
 	},
+
+	"overrides": [
+		{
+			"includes": ["apps/**/vite.config.ts", "apps/**/vite.config.*"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noNodejsModules": "off"
+					}
+				}
+			}
+		}
+	],
+
 	"formatter": {
 		"enabled": true
 	},
+
 	"linter": {
-		"enabled": true
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"noNodejsModules": "error"
+			}
+		}
 	}
 }
